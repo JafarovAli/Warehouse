@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Warehouse.AuthServer", "Warehouse.AuthServer\Warehouse.AuthServer.csproj", "{DFBC1D6D-70C8-4E45-BEB9-A9323BDD4E7D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Warehouse.CommonLibrary", "..\Warehouse.CommonLibrary\Warehouse.CommonLibrary.csproj", "{57747C19-677F-4B75-9030-A5DC755C5B47}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFBC1D6D-70C8-4E45-BEB9-A9323BDD4E7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFBC1D6D-70C8-4E45-BEB9-A9323BDD4E7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFBC1D6D-70C8-4E45-BEB9-A9323BDD4E7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFBC1D6D-70C8-4E45-BEB9-A9323BDD4E7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57747C19-677F-4B75-9030-A5DC755C5B47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57747C19-677F-4B75-9030-A5DC755C5B47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57747C19-677F-4B75-9030-A5DC755C5B47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57747C19-677F-4B75-9030-A5DC755C5B47}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {07DDD320-59A4-4B08-AD59-50C624563CFE}
+	EndGlobalSection
+EndGlobal
