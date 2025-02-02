@@ -1,69 +1,62 @@
-**🔐Warehouse Security Module**
+# Warehouse Security Module
 
-A security module for the Warehouse Management System, built with .NET 6 and Microservices Architecture, utilizing modern technologies like RabbitMQ, MinIO, Redis, and Docker to ensure secure authentication and authorization.
+## Overview
+The **Warehouse** project is built using **.NET 6** and follows a **Microservices** architecture. The security module of this project is responsible for handling authentication, authorization, and secure communication between microservices.
 
-**📌 Features**
+## Technologies Used
+- **.NET 6**
+- **Microservices Architecture**
+- **RabbitMQ** (for message brokering)
+- **MinIO** (for object storage)
+- **Redis** (for caching and session management)
+- **Docker** (for containerization)
 
-🛡 JWT-based Authentication for secure API access
+## Features of the Security Module
+- **User Authentication & Authorization**
+  - JWT-based authentication.
+  - Role-based access control.
+  - Secure password hashing.
+- **Secure Inter-Service Communication**
+  - Token validation for microservices.
+  - Secure API Gateway integration.
+- **Session Management & Caching**
+  - Redis used for caching and session persistence.
+- **Event-Driven Architecture**
+  - RabbitMQ for asynchronous event handling.
+- **Secure Storage**
+  - MinIO for encrypted object storage.
 
-🔑 Role-Based Access Control (RBAC)
+## Installation & Setup
+1. **Clone the repository:**
+   ```sh
+   git clone <repository_url>
+   ```
+2. **Navigate to the security module directory:**
+   ```sh
+   cd Warehouse/Security
+   ```
+3. **Configure Environment Variables:**
+   - Update `.env` or `appsettings.json` for database connections, RabbitMQ, MinIO, and Redis settings.
+4. **Run with Docker:**
+   ```sh
+   docker-compose up --build
+   ```
+5. **Run Locally:**
+   - Ensure all required services (RabbitMQ, MinIO, Redis) are running.
+   - Start the application using .NET CLI:
+     ```sh
+     dotnet run
+     ```
 
-📦 RabbitMQ for event-driven security notifications
+## API Endpoints
+- **Authentication**
+  - `POST /auth/login` – User login.
+  - `POST /auth/register` – User registration.
+- **User Management**
+  - `GET /users/{id}` – Retrieve user details.
+  - `PUT /users/{id}` – Update user information.
+  - `DELETE /users/{id}` – Delete a user.
 
-☁ MinIO for encrypted file storage
+## License
+This project is open-source and can be modified as per requirements.
 
-⚡ Redis for session management and caching
-
-🐳 Dockerized Deployment for seamless scalability
-
-**🛠 Tech Stack**
-
-Backend: .NET 6, ASP.NET Core Identity, Entity Framework Core
-
-Message Queue: RabbitMQ (for security logs and events)
-
-Storage: MinIO (for encrypted data storage)
-
-Caching: Redis (for session storage and authentication tokens)
-
-Database: SQL Server
-
-Containerization: Docker & Docker Compose
-
-**🚀 Getting Started**
-
-1️⃣ Prerequisites
-
-Ensure you have the following installed:
-
-.NET 6 SDK
-
-Docker & Docker Compose
-
-RabbitMQ
-
-MinIO
-
-Redis
-
-SQL Server
-
-2️⃣ Clone the Repository
-```bash
-git clone https://github.com/JafarovAli/Warehouse.git
-cd Warehouse
-  ```
-
-3️⃣ Configure Environment Variables
-Create a .env file and configure the following:
-```bash
-RABBITMQ_URI=amqp://user:password@localhost
-MINIO_URI=http://localhost:9000
-REDIS_URI=redis://localhost
-DB_CONNECTION=Server=localhost;Database=your database name;User Id=sa;Password=your password;
-JWT_SECRET_KEY=your_secret_key  
-  ```
-4️⃣ Run with Docker Compose
-```bash
-docker-compose up -d
-  ```
