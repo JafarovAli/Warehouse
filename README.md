@@ -18,7 +18,6 @@ The **Warehouse** project is built using **.NET 6** and follows a **Microservice
   - Secure password hashing.
 - **Secure Inter-Service Communication**
   - Token validation for microservices.
-  - Secure API Gateway integration.
 - **Session Management & Caching**
   - Redis used for caching and session persistence.
 - **Event-Driven Architecture**
