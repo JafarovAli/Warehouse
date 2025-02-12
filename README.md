@@ -58,4 +58,3 @@ The **Warehouse** project is built using **.NET 6** and follows a **Microservice
 
 ## License
 This project is open-source and can be modified as per requirements.
-
